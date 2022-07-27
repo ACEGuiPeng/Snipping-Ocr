@@ -41,12 +41,12 @@ namespace Snipping_OCR
         #region Private methods
         private void OnCancel(EventArgs e)
         {
-            Cancel?.Invoke(this, e);
+            if (Cancel != null) Cancel(this, e);
         }
 
         private void OnAreaSelected(EventArgs e)
         {
-            AreaSelected?.Invoke(this, e);
+            if (AreaSelected != null) AreaSelected(this, e);
         }
 
         private void CloseForms()

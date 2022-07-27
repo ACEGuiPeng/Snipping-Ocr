@@ -39,8 +39,8 @@ namespace Snipping_OCR
             RegisterHotKey();
 
             var hk = ConfigurationManager.AppSettings["Hotkey"];
-            ShowBaloonMessage($"Double-click the systray icon or press {hk} to start a new snip...", "Snipping OCR");
-            mnuSnip.Text = $"Snip {hk}";
+            ShowBaloonMessage(string.Format("Double-click the systray icon or press {0} to start a new snip...", hk), "Snipping OCR");
+            mnuSnip.Text = string.Format("Snip {0}", hk);
             Hide();
         }
 
