@@ -188,9 +188,8 @@ namespace Snipping_OCR
 
         private void ProcessOcrImage(Image image)
         {
-            var lang = (string)mnuLanguageCombo.SelectedItem == "Spanish" ? "spa" : "eng";
-            var ocr = OcrFactory.GetOcr(mnuEngine.SelectedItem.ToString());
-            var result = ocr.Process(image, lang);
+            var ocr = OcrFactory.GetOcr();
+            var result = ocr.Process(image, "chi_sim");
             notifyIcon.Visible = true; // hide balloon tip (if any)
             OcrResultForm.ShowOcr(result);
         }

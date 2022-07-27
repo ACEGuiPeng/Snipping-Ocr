@@ -2,13 +2,10 @@
 {
     public static class OcrFactory
     {
-        public static IOcr GetOcr(string type)
+        public static IOcr GetOcr()
         {
             // switch on type
-            if (type == "SpaceOCR")
-                return new OcrSpaceOcr();
-            else
-                return new OcrTesseract();
+            return new OcrTesseract();
         }
     }
 }

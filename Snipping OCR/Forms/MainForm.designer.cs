@@ -70,7 +70,6 @@
             // 
             this.mnuEngine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mnuEngine.Items.AddRange(new object[] {
-            "SpaceOCR",
             "Tesseract"});
             this.mnuEngine.Name = "mnuEngine";
             this.mnuEngine.Size = new System.Drawing.Size(121, 23);
@@ -79,8 +78,7 @@
             // 
             this.mnuLanguageCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mnuLanguageCombo.Items.AddRange(new object[] {
-            "English",
-            "Spanish"});
+            "中文"});
             this.mnuLanguageCombo.Name = "mnuLanguageCombo";
             this.mnuLanguageCombo.Size = new System.Drawing.Size(121, 23);
             this.mnuLanguageCombo.Click += new System.EventHandler(this.toolStripComboBox1_Click);
